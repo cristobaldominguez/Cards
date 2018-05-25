@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/fontAwesome.css">
+  <link rel="stylesheet" href="./assets/css/fonts.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>E8CP2A1</title>
+</head>
+<body>
+
+  <header class="header__main">
+    <h1 class="header__title">Landscapes</h1>
+    <form action="#" class="form__search">
+      <input type="text" name="s" value="" placeholder="Search" class="form__input"><input type="submit" name="" value="" class="form__submit">
+    </form>
+    <p class="header__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quia corrupti praesentium nemo aliquid, eius voluptate vel? Officiis reiciendis at ducimus laboriosam dolor voluptatum, debitis autem dolorem eum error maiores.</p>
+  </header>
+
+  <ul class="cards">
+    <li class="card">
+      <div class="card__highlight">
+        <img class="card__img" src="./assets/images/squared/17.jpg" alt="">
+      </div>
+      <div class="card__content">
+        <div class="card__profile-container">
+          <img class="card__profile" src="./assets/images/profiles/she.jpg" alt="">
+        </div>
+        <a class="card__like card__like--red" href="#">
+          <i class="fas fa-heart"></i>
+        </a>
+        <div class="card__title">
+          <h2>Golden Gate Bridge, CA</h2>
+        </div>
+        <div class="card__author">
+          <h3 class="card__author-name">Margot Robbie</h3>
+        </div>
+
+        <div class="card__hidden">
+          <ul class="social">
+            <li class="social__element">
+              <div class="social__number">8526</div>
+              <div class="social__text">Followers</div>
+            </li>
+            <li class="social__element">
+              <div class="social__number">51,3K</div>
+              <div class="social__text">Likes</div>
+            </li>
+            <li class="social__element">
+              <div class="social__number">106</div>
+              <div class="social__text">Following</div>
+            </li>
+          </ul>
+          <div class="card__follow">
+            <button class="card__follow-btn">Seguir</button>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="card card--open">
+      <div class="card__highlight">
+        <img class="card__img" src="./assets/images/squared/05.jpg" alt="">
+      </div>
+      <div class="card__content">
+        <div class="card__profile-container">
+          <img class="card__profile" src="./assets/images/profiles/mr.jpg" alt="">
+        </div>
+        <div class="card__title">
+          <h2>Laguna de Aculeo, Paine</h2>
+        </div>
+        <div class="card__author">
+          <h3 class="card__author-name">Barack Obama</h3>
+        </div>
+        <a class="card__like" href="#">
+          <i class="fas fa-heart"></i>
+        </a>
+
+        <div class="card__hidden">
+          <ul class="social">
+            <li class="social__element">
+              <div class="social__number">10,4K</div>
+              <div class="social__text">Followers</div>
+            </li>
+            <li class="social__element">
+              <div class="social__number">1524</div>
+              <div class="social__text">Likes</div>
+            </li>
+            <li class="social__element">
+              <div class="social__number">215</div>
+              <div class="social__text">Following</div>
+            </li>
+          </ul>
+          <div class="card__follow">
+            <button class="card__follow-btn card__follow-btn--following">Siguiendo</button>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="card">
+      <div class="card__highlight">
+        <img class="card__img" src="./assets/images/squared/03.jpg" alt="">
+      </div>
+      <div class="card__content">
+        <div class="card__profile-container">
+          <img class="card__profile" src="./assets/images/profiles/he.jpg" alt="">
+        </div>
+        <div class="card__title">
+          <h2>New York, NY</h2>
+        </div>
+        <div class="card__author">
+          <h3 class="card__author-name">Ryan Reynolds</h3>
+        </div>
+        <a class="card__like" href="#">
+          <i class="fas fa-heart"></i>
+        </a>
+
+        <div class="card__hidden">
+          <ul class="social">
+            <li class="social__element">
+              <div class="social__number">1258</div>
+              <div class="social__text">Followers</div>
+            </li>
+            <li class="social__element">
+              <div class="social__number">21,4K</div>
+              <div class="social__text">Likes</div>
+            </li>
+            <li class="social__element">
+              <div class="social__number">183</div>
+              <div class="social__text">Following</div>
+            </li>
+          </ul>
+          <div class="card__follow">
+            <button class="card__follow-btn">Seguir</button>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <section class="create">
+    <h2 class="create__title">Crea un landscape</h2>
+
+    <form action="#" class="create__form" autocomplete="off">
+      <label for="name" class="create__label">
+        <input type="text" name="name" class="create__input" id="name" required>
+        <span class="create__placeholder">Título</span>
+      </label>
+
+      <div class="create__display_images">
+        <div class="create__image"><img src="assets/images/squared/uk.png" class="create__img"></div>
+        <div class="create__profile"><img src="assets/images/profiles/uk.png" class="create__img"></div>
+
+        <label for="image" class="create__label--select">
+          <select name="image" id="image" class="create__select">
+            <option value="uk.png">Seleccione una Imagen</option>
+            <option value="01.jpg">imagen 01</option>
+            <option value="02.jpg">imagen 02</option>
+            <option value="03.jpg">imagen 03</option>
+            <option value="04.jpg">imagen 04</option>
+            <option value="05.jpg">imagen 05</option>
+            <option value="06.jpg">imagen 06</option>
+            <option value="07.jpg">imagen 07</option>
+            <option value="08.jpg">imagen 08</option>
+            <option value="09.jpg">imagen 09</option>
+            <option value="10.jpg">imagen 10</option>
+            <option value="11.jpg">imagen 11</option>
+            <option value="12.jpg">imagen 12</option>
+            <option value="13.jpg">imagen 13</option>
+            <option value="14.jpg">imagen 14</option>
+            <option value="15.jpg">imagen 15</option>
+            <option value="16.jpg">imagen 16</option>
+            <option value="17.jpg">imagen 17</option>
+            <option value="18.jpg">imagen 18</option>
+            <option value="19.jpg">imagen 19</option>
+            <option value="20.jpg">imagen 20</option>
+          </select>
+        </label>
+
+        <label for="author" class="create__label--select">
+          <select name="author" id="author" class="create__select">
+            <option value="uk.png">Seleccione un Autor</option>
+            <option value="she.jpg">Margot Robbie</option>
+            <option value="he.jpg">Ryan Reynolds</option>
+            <option value="mr.jpg">Barack Obama</option>
+            <option value="fl.jpg">Florcita Motuda</option>
+          </select>
+        </label>
+
+      </div>
+
+      <label for="followers" class="create__label">
+        <input type="text" name="followers" class="create__input" id="followers" required>
+        <span class="create__placeholder">Followers</span>
+      </label>
+
+      <label for="likes" class="create__label">
+        <input type="text" name="likes" class="create__input" id="likes" required>
+        <span class="create__placeholder">Likes</span>
+      </label>
+
+      <label for="following" class="create__label">
+        <input type="text" name="following" class="create__input" id="following" required>
+        <span class="create__placeholder">Following</span>
+      </label>
+
+      <input type="submit" value="Agregar" class="create__submit">
+    </form>
+  </section>
+
+</body>
+</html>
