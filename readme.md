@@ -17,7 +17,7 @@ Cada ejercicio viene con su archivo, el cual contiene información relevante par
 ## Ejercicios a desarrollar
 
 ##### 1. Precalentamiento.
-El archivo `index.html` tiene todo el código HTML y el CSS ya desarrollados. Lo que se busca es que uds agreguen todo lo relacionado con la interacción, o sea el código jQuery. Para eso es necesario no solo agregar la referencia a la librería (que la pueden encontrar en:`assets/js/lib/jquery-3.3.1.min.js `), si no que también la referencia a un archivos JS externo. 
+El archivo `index.html` tiene todo el código HTML y el CSS ya desarrollados. Lo que se busca es que uds agreguen todo lo relacionado con la interacción, o sea el código jQuery. Para eso es necesario no solo agregar la referencia a la librería (que la pueden encontrar en:`assets/js/lib/jquery-3.3.1.min.js `), si no que también la referencia a un archivos JS externo.
 
 Ese archivo externo de JS se debe encontrar en la carpeta `assets/js` y el objetivo es que, como tendrán que escribir un código largo de JS, se realice en otro archivo para que sea más ordenado. Es importante que lo primero que hagan en ese archivo sea agregar el [Document Ready](https://es.stackoverflow.com/q/92628) de jQuery 3, para que su código solo se ejecute cuando el DOM haya sido cargado.
 
@@ -25,11 +25,11 @@ Ese archivo externo de JS se debe encontrar en la carpeta `assets/js` y el objet
 ##### 2. Apertura de la tarjeta
 Si revisan el index en sus navegadores, verán que la segunda tarjeta esta abierta y que las otras dos se encuentran cerradas. Por otro lado, si revisamos el código HTML veremos que la tarjeta abierta tiene la clase `card--open`.
 
-Lo que se pide es crear un método que escuche un click dentro de la tarjeta (la clase `.card`) y que una vez se produzca, haga un toggle de la clase `card--open `.
+Lo que se pide es que al gatillar el click dentro de la tarjeta (la clase `.card`) se haga un toggle de la clase `card--open `.
 
 
 ##### 3. Like
-Dentro de cada carta hay un corazón para que uno pueda hacer like. Es necesario implementar el click que escuche el elemento con clase `.card__like` y haga un toggle de la clase `.card__like--red`.
+Dentro de cada carta hay un corazón para que uno pueda hacer like. Es necesario implementar que al hacer click en el elemento con clase `.card__like` se realice un toggle de la clase `.card__like--red`.
 
 __Tip:__ Recuerda que `.card__like` se encuentra dentro de `.card` lo tanto todos los eventos que gatilles sobre `.card__like` también se gatillarán en `.card`. Es parte de la tarea evitar que un evento se gatille en lugares no deseados.
 
@@ -39,7 +39,7 @@ Cada tarjeta tiene un botón que dice 'Seguir'. Lo que se pide es que cada vez q
 
 
 ##### 5. Agregar imagen seleccionada
-Al final de la página hay un formulario donde se pueden agregar dinámicamente nuevas tarjetas. Poco a poco idemos agregando la programación para que funcione, sin embargo por ahora cuando uno hace un cambio en la opción: 'Seleccione una imagen', se debería desplegar dentro del div con clase `.create__image` la imagen que seleccionada en el select (y que hace referencia al value del option). Para realizar eso ya hemos agregado el tag de la imagen y lo que deberemos hacer es cambiar el src de aquella etiqueta. 
+Al final de la página hay un formulario donde se pueden agregar dinámicamente nuevas tarjetas. Poco a poco iremos agregando la programación para que funcione, sin embargo por ahora cuando uno hace un cambio en la opción: 'Seleccione una imagen', se debería desplegar dentro del div con clase `.create__image` la imagen que seleccionada en el select (y que hace referencia al value del option). Para realizar eso ya hemos agregado el tag de la imagen y lo que deberemos hacer es cambiar el src de aquella etiqueta.
 
 Deberemos escuchar el evento que se gatille con el cambio del select y posteriormente capturar el value del select y concatenarlo con la ruta para llegar a las imágenes (`assets/images/squared/`)
 
@@ -65,7 +65,7 @@ __Tip:__ Sabemos que el value de un select lo conseguimos con el método `val()`
 
 
 ##### 8. Agregar el código al HTML
-Al hacer click en el botón 'Agregar' del formulario se agregará una nueva tarjeta a la página web, por lo tanto lo que realizaremos en este punto será eso. 
+Al hacer click en el botón 'Agregar' del formulario se agregará una nueva tarjeta a la página web, por lo tanto lo que realizaremos en este punto será eso.
 
 Tomaremos un ejemplo del código de una tarjeta que tenemos en el mismo `index.html` y al gatillarse el submit lo que haremos será agregarlo directamente dentro de la etiqueta `.cards` con algún método que hayamos visto en clases anteriores. Por supuesto es necesarios saber que debemos concatenar/interpolar las variables creadas en el punto anterior para agregar la personalización de la tarjeta.
 
